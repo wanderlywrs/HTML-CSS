@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Ninja Naruto';
+    src: url('/font/NinjaNaruto.woff2') format('woff2'),
+        url('/font/NinjaNaruto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Naruto';
+    src: url('/font/naruto.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor00: #ff9900;
+    --cor01: #333333;
+    --cor02: #8B0000;
+    --cor03: #4A4A4A;
+    --cor04: #d7350d;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --font-nt0: 'Naruto', cursive;
+    --font-nt1: 'Ninja Naruto', cursive;
+}
+
+body {
+    background-color: var(--cor01);
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-color: var(--cor00);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header>h1 {
+    font-family: var(--font-nt1);
+    font-size: 3em;
+    color: var(--cor04);
+    margin-bottom: 20px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+
+}
+
+header>p {
+    font-family: var(--font-nt0);
+    color: var(--cor04);
+    font-size: 1.3em;  
+    font-weight: normal;
+    margin: auto;
+    padding: 5px;   
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.200);
+}
+
+nav{
+    background-color: var(--cor00);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.158);
+}
+nav>a {
+    font-family: var(--font-nt0);
+    color: var(--cor04);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+nav>a:hover{
+    background-color: var(--cor0);
+    color: var(--cor03);
+}
+
+main {
+    max-width: 1000px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main>h1 {
+    font-family: var(--font-nt0);
+    color: var(--cor02);
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.849);
+}
+
+main>h2{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    font-weight: normal;
+    padding: 20x;
+}
+
+main>h3{
+    font-family: var(--font-nt0);
+    padding-top: 20px;
+    font-weight: normal;
+
+}
+
+main>p {
+    font-family: var(--font-padrao);
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor02);
+}
+main img{
+    width: 100%;
+}
