@@ -9,7 +9,7 @@
 :root{
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: "Sriracha";  /*Conteúdo*/ 
-    --font3: "Passero One", cursive; /*Titulo*/
+    --font3: "Passion One", cursive; /*Titulo*/
 }
 html, body{
     min-height: 100vh;
@@ -70,16 +70,16 @@ section.imagem{
 section.imagem > p {
     display: inline-block;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.6);
     text-shadow: 1px 1px 0px black;
 }
 
 section#img01{
-    background-image: url(/imagens/background001.jpg);
+    background-image: url(../imagens/background001.jpg);
     background-position: right center;
 }
 section#img02{
-    background-image: url(/imagens/background002.jpg);
+    background-image: url(../imagens/background002.jpg);
     
 }
 footer{
