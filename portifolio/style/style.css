@@ -259,7 +259,19 @@ p {
     font-size: 14px;
     font-weight: bold;
 }
-
+footer{
+     /* Para compensar o menu fixo */
+    padding: 20px;
+    margin-left: 250px;   
+    background-color: wheat;
+    margin-top: 100px;
+}
+footer h5{
+    font-family: var(--fonte-padrao);
+    color: var(--cor4);
+    text-align: center;
+    
+}
 @media (max-width: 1100px) {
 
     /* Esconde o menu lateral */
