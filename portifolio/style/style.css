@@ -32,7 +32,7 @@ header {
     /* Ocupará toda a altura da tela */
 }
 
-.container {
+.header-container {
     background-color: var(--cor1);
     width: 250px;
     height: 100vh;
@@ -47,7 +47,7 @@ header {
     padding-top: 20px;
 }
 
-.img-destaque {
+.profile-picture {
     background-image: url(../img/img-150.jpg);
     height: 150px;
     width: 150px;
@@ -56,7 +56,7 @@ header {
     background-position: right center;
 }
 
-.container h3 {
+.header-container h3 {
     color: white;
     font-family: var(--fonte-destaque);
     margin-bottom: 60px;
@@ -106,7 +106,7 @@ nav ul li a:hover {
 }
 
 /* ========== TEXTO SOBRE A IMAGEM ========== */
-#sct-1 {
+#section-intro {
     display: flex;
     flex-direction: column;
     color: white;
@@ -114,14 +114,14 @@ nav ul li a:hover {
     height: 100vh;
 }
 
-#sct-1 h1 {
+#section-intro h1 {
     font-family: var(--fonte-destaque);
     color: white;
     font-size: 3em;
     font-weight: normal;
 }
 
-#sct-1 h2 {
+#section-intro h2 {
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
     font-weight: normal;
@@ -146,39 +146,39 @@ section p {
     margin-top: 15px;
 }
 
-#sct-2 {
+#section-about {
     padding: 60px 60px 0px 20px;
 }
 
-#sct-2>h1 {
+#section-about>h1 {
     font-family: var(--fonte-destaque);
     font-size: 1.8rem;
     text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.151);
 }
 
-#sct-2>p {
+#section-about>p {
     font-family: var(--fonte-padrao);
     margin-top: 15px;
     text-indent: 20px;
     text-align: justify;
 }
 
-#sct-3 {
+#section-details{
     display: flex;
     margin-top: 40px;
     gap: 20px;
     flex-wrap: nowrap;
 }
 
-#sct-3 h1 {
+#section-details h1 {
     font-family: var(--fonte-destaque);
 }
 
-#sct-3 p {
+#section-details p {
     font-family: var(--fonte-padrao);
 }
 
-.img-apt {
+.about-image {
     background-image: url(../img/img-mi-300.jpg);
     background-repeat: no-repeat;
     width: 300px;
@@ -187,18 +187,18 @@ section p {
     flex: 1 0 auto;
 }
 
-#st3-4 h1 {
+#section-skills h1 {
     font-family: var(--fonte-destaque);
     margin-top: 40px;
 }
 
-#st3-4 h4,
+#section-skills h4,
 p {
     font-family: var(--fonte-padrao);
 }
 
 /* Container das barras */
-.progress-container {
+.skills-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* 2 colunas */
@@ -210,7 +210,7 @@ p {
 }
 
 /* Cada item da barra */
-.progress {
+.skill-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -218,7 +218,7 @@ p {
 }
 
 /* Nome da skill */
-.progress h4 {
+.skill-item h4 {
     width: 80px;
     /* Mantém um tamanho fixo para alinhamento */
     text-align: right;
@@ -227,7 +227,7 @@ p {
 }
 
 /* Fundo da barra */
-.progress-bar-container {
+.skill-progress-container {
     flex: 1;
     /* Ocupa o espaço restante */
     height: 10px;
@@ -237,7 +237,7 @@ p {
 }
 
 /* Barra preenchida */
-.progress-bar {
+.skill-progress-bar {
     height: 100%;
     background: linear-gradient(90deg, #1481BA, #11B5E4);
     border-radius: 5px;
@@ -245,9 +245,9 @@ p {
 }
 
 /* Estilo da porcentagem */
-.progress-value {
-    width: 40px;
-    text-align: left;
+.skill-percentage {
+    width: 50px;
+    text-align: right;
     font-size: 14px;
     font-weight: bold;
 }
@@ -255,7 +255,7 @@ p {
 @media (max-width: 1100px) {
 
     /* Esconde o menu lateral */
-    .container {
+    .header-container {
         display: none;
     }
 
@@ -266,7 +266,7 @@ p {
     }
 
     /* Header para mobile */
-    .mobile-header {
+    .mobile-nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -279,7 +279,7 @@ p {
     }
 
     /* Botão hambúrguer na direita */
-    .hamburger {
+    .menu-toggle-btn {
         font-size: 2rem;
         background: none;
         border: none;
@@ -290,7 +290,7 @@ p {
     }
 
     /* Menu escondido por padrão */
-    .mobile-menu {
+    .mobile-nav-menu{
         display: none;
         flex-direction: column;
         background-color: var(--cor1);
@@ -301,15 +301,15 @@ p {
     }
 
     /* Estilo dos links do menu */
-    .mobile-menu ul {
+    .mobile-nav-menu ul {
         list-style: none;
     }
 
-    .mobile-menu ul li {
+    .mobile-nav-menu ul li {
         text-align: center;
     }
 
-    .mobile-menu ul li a {
+    .mmobile-nav-menu ul li a {
         color: var(--cor5);
         text-decoration: none;
         font-size: 1rem;
@@ -317,12 +317,12 @@ p {
         transition: 0.3s;
     }
 
-    .mobile-menu ul li a:hover {
+    .mobile-nav-menu ul li a:hover {
         background-color: rgba(255, 255, 255, 0.2);
     }
 
     /* Quando o menu for ativado */
-    .mobile-menu.show {
+    .mobile-nav-menu.show {
         display: flex;
     }
 
@@ -330,7 +330,7 @@ p {
 
 @media (max-width: 600px) {
 
-    #sct-1 h1 {
+    #section-intro h1 {
         font-family: var(--fonte-destaque);
         color: white;
         font-size: 3em;
@@ -338,31 +338,31 @@ p {
         text-align: center;
     }
 
-    #sct-1 h2 {
+    #section-intro h2 {
         font-family: var(--fonte-padrao);
         font-size: 1.5em;
         font-weight: normal;
         text-align: center;
     }
 
-    #sct-3 {
+    #section-details{
         display: flex;
         padding: 20px;
         gap: 20px;
         flex-wrap: wrap;
     }
 
-    .img-apt {
+    .about-image {
         background-image: url(../img/img-mi-300.jpg);
         background-repeat: no-repeat;
         background-position: center;
 
     }
 
-    .progress-container {
+    .skills-list {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* 2 colunas */
+        /* 1 colunas */
         gap: 15px;
         /* Espaço entre as barras */
         max-width: 100%;
@@ -371,7 +371,7 @@ p {
     }
 
     /* Cada item da barra */
-    .progress {
+    .skill-item{
         display: flex;
         align-items: center;
         gap: 10px;
